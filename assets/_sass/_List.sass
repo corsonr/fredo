@@ -1,0 +1,35 @@
+
+// List
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+dl,
+ol,
+ul
+	list-style: none
+	margin-top: 0
+	padding-left: 0
+	color: $color-tertiary
+
+	dl,
+	ol,
+	ul
+		font-size: 90%
+		margin: 1.5rem 0 1.5rem 3.0rem
+
+ol
+	list-style: none
+	counter-reset: item
+	margin-left: 20px
+
+ul
+	list-style: circle inside
+
+ol li:before
+	color: $color-secondary
+	position: absolute
+	left: 0
+	width: 30px
+	text-align: right
+	content: counter(item) "."
+	counter-increment: item
+	font-weight: 700

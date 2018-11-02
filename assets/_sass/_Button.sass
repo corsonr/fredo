@@ -1,0 +1,101 @@
+
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+	background-color: $color-primary
+	border: .1rem solid $color-primary
+	border-radius: .4rem
+	color: $color-initial
+	cursor: pointer
+	display: inline-block
+	font-size: 1.1rem
+	font-weight: 700
+	height: 3.8rem
+	letter-spacing: .1rem
+	line-height: 3.8rem
+	padding: 0 3.0rem
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+	white-space: nowrap
+	font-family: 'Lato', sans-serif
+
+	&:focus,
+	&:hover
+		background-color: $color-secondary
+		border-color: $color-secondary
+		color: $color-initial
+		outline: 0
+
+	&[disabled]
+		cursor: default
+		opacity: .5
+
+		&:focus,
+		&:hover
+			background-color: $color-primary
+			border-color: $color-primary
+
+	&.button-outline
+		background-color: transparent
+		color: $color-primary
+
+		&:focus,
+		&:hover
+			background-color: transparent
+			border-color: $color-secondary
+			color: $color-secondary
+
+		&[disabled]
+
+			&:focus,
+			&:hover
+				border-color: inherit
+				color: $color-primary
+
+	&.button-clear
+		background-color: transparent
+		border-color: transparent
+		color: $color-primary
+
+		&:focus,
+		&:hover
+			background-color: transparent
+			border-color: transparent
+			color: $color-secondary
+
+		&[disabled]
+
+			&:focus,
+			&:hover
+				color: $color-primary
+
+.button-black
+	background-color: black
+	border-color: black
+
+.button-black.button-clear,
+.button-black.button-outline
+	background-color: transparent
+	color: black
+
+.button-black.button-clear
+	border-color: transparent
+
+/* Custom size */
+.button-small
+	font-size: .8rem
+	height: 2.8rem
+	line-height: 2.8rem
+	padding: 0 1.5rem
+
+.button-large
+	font-size: 1.4rem
+	height: 4.5rem
+	line-height: 4.5rem
+	padding: 0 2rem

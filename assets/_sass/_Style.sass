@@ -1,0 +1,416 @@
+/* Mobile first, always, just because */
+
+// Run: sass --sourcemap=none --style nested --watch  _sass:css
+
+.admin-bar .navigation
+	margin-top: 32px
+
+// ----------- Logo -----------
+.logo
+	font-family: 'Lato', sans-serif
+	color: $color-secondary
+	font-size: 35px
+	font-weight: bolder
+	text-transform: uppercase
+	line-height: 40px
+	margin-top: 12px
+
+.section-title a
+	position: relative
+	font-weight: bold
+	text-decoration: none
+	font-size: 35px
+	color: #000
+
+.section-title .title-bg
+	background-color: #000
+	left: 0
+	height: 25px
+	position: absolute
+	left: 31px
+	top: 10px
+	z-index: -1
+	width: 15px
+
+.r
+	position: relative
+	left: 8px
+
+.e
+	color: #FFF !important
+	position: relative
+	left: 4px
+	font-weight: bolder
+
+.lastname
+	font-weight: normal
+
+// ----------- Navigation -----------
+
+.navigation
+	display: none
+	box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.04)
+	z-index: 1
+	text-align: right
+.navigation .menu
+	text-align: right
+	display: inline-block
+	font-size: 1.3rem
+	font-weight: 700
+	height: 3.8rem
+	letter-spacing: .1rem
+	line-height: 3.8rem
+	padding: 16px 3px
+	text-decoration: none
+	text-transform: uppercase
+	white-space: nowrap
+	font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+.navigation .menu .menu-item
+	display: inline
+	list-style: none
+	margin: 0 20px
+.navigation .menu .menu-item:last-of-type
+	margin: 0
+.navigation .menu .menu-item.button
+	display: inline-block
+	font-size: 1.1rem
+	font-weight: 700
+	height: 3.8rem
+	letter-spacing: 0.1rem
+	line-height: 3.8rem
+	padding: 0 3rem
+	text-align: center
+	text-decoration: none
+	text-transform: uppercase
+
+.navigation .menu .menu-item.button a
+	color: $color-initial !important
+
+// ----------- Home Posts, Archive Posts -----------
+
+.row.home-posts,
+.row.archive-posts
+	padding-top: 30px
+
+.row.home-posts span.title a,
+.row.archive-posts span.title a
+	font-weight: bold
+	font-family: 'Lato', sans-serif
+	display: block
+	margin-bottom: 10px
+	color: $color-secondary
+	font-size: 22px
+
+.row.home-posts .button a,
+.row.archive-posts .button a
+	color: $color-initial
+
+.row.home-posts span.title a,
+.row.archive-posts span.title a
+	font-weight: bold
+	font-family: 'Lato', sans-serif
+	display: block
+	margin-bottom: 10px
+	color: $color-secondary
+	font-size: 22px
+
+.row.home-posts .excerpt p,
+.row.archive-posts .excerpt p
+	font-weight: normal
+	display: block
+	font-size: 17px
+	color: $color-primary
+
+.row.home-posts.row .column,
+.row.archive-posts.row .column
+	margin-bottom: 30px
+
+.row.home-posts.row .column:hover,
+.row.archive-posts.row .column:hover
+	color: $color-primary
+
+// ----------- Container -----------
+
+.container .content > p:first-of-type
+		font-style: italic
+
+.container .content > p:first-of-type:first-letter,
+.container .content > blockquote:first-of-type:first-letter
+	font-family: 'Georgia','Cambria','Times New Roman','Time','serif!important'
+	float: left
+	font-size: 66px
+	font-weight: 300
+	line-height: 50px
+	margin: 5px 8px -5px 0
+	color: $color-secondary
+
+.container .content a,
+.container .content a:visited
+	color: $color-secondary
+	text-decoration: none
+
+.container .content img
+	height: auto
+
+.row.post-info
+	margin-bottom: 20px
+
+// ----------- Post Tags -----------
+
+span.tags
+	display: block
+
+.tags .button.button-outline.stripe:hover,
+.tags .button.button-outline.woocommerce:hover,
+.tags .button.button-outline.paypal:hover
+	color: #FFF
+	transition: color, border-color, background-color .3s
+
+.tags .button.button-outline:hover
+	background-color: $color-secondary !important
+	border: 1px solid $color-secondary !important
+	color: $color-initial
+
+.tags .button.button-outline.stripe:hover
+	background-color: $color-stripe !important
+	border: 1px solid $color-stripe !important
+
+.tags .button.button-outline.woocommerce:hover
+	background-color: $color-woocommerce !important
+	border: 1px solid $color-woocommerce !important
+
+.tags .button.button-outline.paypal:hover
+	background-color: $color-paypal !important
+	border: 1px solid $color-paypal !important
+
+.column.post-date
+	text-align: left
+
+.column span.date
+	font-size: 11px
+	padding-top: 5px
+	font-family: 'Lato', sans-serif
+	display: block
+	color: $color-primary
+
+.column span.outdated
+	display: block
+	font-style: italic
+	font-weight: bold
+	font-size: 11px
+	background-color: $color-quinary
+	border: 1px solid rgba(27,31,35,0.15)
+	padding: 3px 4px
+	color: $color-tertiary
+	font-family: 'Lato', sans-serif
+	position: relative
+	top: 2px
+	text-align: left
+
+// ----------- Pagination -----------
+
+.pagination
+	list-style: none
+	font-size: 14px
+	font-family: 'Lato', sans-serif
+	color: $color-secondary
+.pagination li
+	display: inline
+.pagination li a
+	display: block
+	float: left
+	padding: 4px 9px
+	margin-right: 7px
+	border: 1px solid $color-quaternary
+	border-radius: .4rem
+.pagination li span.current
+	display: block
+	float: left
+	padding: 4px 9px
+	margin-right: 7px
+	border: 1px solid $color-quaternary
+	background-color: #f5f5f5
+.pagination li span.dots
+	display: block
+	float: left
+	padding: 4px 9px
+	margin-right: 7px
+
+// ----------- Section Title -----------
+
+.row.section-title h2
+	text-transform: uppercase
+	letter-spacing: 1px
+	border-bottom: 1px solid $color-quaternary
+	color: $color-secondary
+	font-size: 19px
+	font-weight: bold
+	margin: 20px auto 2.5em
+	text-align: center
+	line-height: 18px
+
+.row.section-title h2>span
+	background: $color-initial
+	padding: 0 10px
+	position: relative
+	top: 10px
+
+// ----------- Author & theme description -----------
+
+.row.author,
+.row.theme
+	font-size: 20px
+
+.row.author span.title,
+.row.theme span.title
+	font-weight: bold
+	font-family: 'Lato', sans-serif
+	text-transform: capitalize
+
+.row.author span.bio,
+.row.theme span.description
+	display: block
+	font-size: 17px
+	color: $color-primary
+	font-family: 'Lato', sans-serif
+	font-weight: 500
+	margin-bottom: 20px
+
+.row.author span.social,
+.row.author span.support
+	font-size: 15px
+	color: $color-primary
+	font-family: 'Lato', sans-serif
+	text-align: center
+
+.row.author span.social
+	float: left
+
+.row.author span.support
+	float: right
+
+.social .button.button-outline:hover,
+.support .button.button-outline:hover
+	color: #FFF
+	transition: color, border-color, background-color .3s
+
+.social .button.button-outline:hover
+	background-color: $color-twitter !important
+	border: 1px solid $color-twitter !important
+
+.support .button.button-outline:hover
+	background-color: $color-buy-me-a-coffee !important
+	border: 1px solid $color-buy-me-a-coffee !important
+
+.row.author.row .column
+	margin-bottom: 20px
+
+// ----------- Related Posts -----------
+
+.row.related-posts
+	font-size: 18px
+
+.row.related-posts span.title a
+	font-weight: bold
+	font-family: 'Lato', sans-serif
+	display: block
+	margin-bottom: 10px
+	color: $color-secondary
+
+.row.related-posts span.excerpt
+	font-weight: normal
+	display: block
+	font-size: 17px
+	color: $color-primary
+
+.row.related-posts.row .column
+	margin-bottom: 30px
+
+.row.related-posts.row .column:hover
+	color: $color-primary
+
+	// ----------- Comments -----------
+
+.row.comments p
+	font-size: 16px
+	font-family: 'Lato', sans-serif
+
+.row.comments span.title
+	font-weight: bold
+	font-family: 'Lato', sans-serif
+	display: block
+	margin-bottom: 10px
+
+.comment-author cite,
+.comment-author cite a
+	font-family: 'Lato', sans-serif
+	color: $color-secondary
+	text-transform: capitalize
+
+.commentmetadata a
+	font-family: 'Lato', sans-serif
+	font-size: 12px
+
+// ----------- Archive -----------
+.home-posts,
+.archive-posts,
+.related-posts
+	display: flex
+	flex-wrap: wrap
+
+// ----------- Footer -----------
+
+.row.footer
+	margin: 30px 0
+	font-size: 12px
+	font-family: 'Lato', sans-serif
+	color: $color-primary
+	border-top: 1px solid $color-quaternary
+	text-align: right
+	padding-top: 20px
+
+// ----------- MEDIA QUERIES -----------
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem)
+	.navigation
+		display: block
+		margin: 0 auto
+		background-color: $color-initial
+		z-index: 1
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+	.navigation .nav_container
+		width: 960px
+		margin: 0 auto
+	.logo
+		display: block !important
+	.navigation_list
+		display: block
+	.container
+		margin-top: 70px
+	.column span.outdated
+		float: right
+	.column.post-date
+		text-align: right
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem)
+	.container
+		width: 700px
+
+	.container .content > p:first-of-type
+		font-family: 'Georgia','Cambria','Times New Roman','Time','serif!important'
+		width: 140%
+		margin: 0 -20%
+
+	.container .content blockquote p
+		font-family: 'Georgia','Cambria','Times New Roman','Time','serif!important'
+		width: 100% !important
+		margin: 0 !important
+		color: $color-secondary
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem)
