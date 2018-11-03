@@ -9,6 +9,8 @@
  * @since 1.0
  */
 
+ require 'inc/customizer.php';
+
  /**
   * Sets actions.
 	*/
