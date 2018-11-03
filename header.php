@@ -13,7 +13,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 	<?php wp_head(); ?>
