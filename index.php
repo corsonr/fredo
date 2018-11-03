@@ -62,7 +62,7 @@ get_header(); ?>
 		endif;
 
 		// Reset query to prevent conflicts
-		wp_reset_query();
+		wp_reset_postdata();
 	?>
 </div>
 
