@@ -3,6 +3,10 @@ A free, open source WordPress theme, will be soon available. You can get a demo 
 
 <a align="center" href="https://github.com/corsonr/fredo/"><img width="100%" src="https://github.com/corsonr/fredo/raw/master/screenshot.png" alt="Fredo, simple & clean WordPress theme"></a>
 
+## Why calling it "Fredo"?
+
+Well, Fred is my father's name, and trust me, that man is really incredible. Highly inspiring. He's a multi [ironman](https://www.ironman.com), a former professional football player, a known chef who who worked in the best Parisian restaurants etc... That's why I called that theme Fredo ;-)
+
 ## Fredo is using Milligram
 
 [Milligram](https://milligram.io/) a minimalist CSS framework built by [CJ Patoilo](http://cjpatoilo.com/). Well, to be honest, Fredo is using a modified version of Milligram, with more components.
