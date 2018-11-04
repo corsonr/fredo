@@ -25,8 +25,8 @@
 					<div class="row">
 						<div class="column column-25 logo">
 							<h2 class="title section-title">
-								<a href="<?php echo site_url(); ?>" >
-									<?php echo apply_filters( 'fredo_site_logo', '<span class="r">R</span><span class="e">E</span>MI<span class="title-bg"></span><span class="lastname">CORSON</span>' ) ; ?>
+								<a href="<?php echo esc_url( site_url() ); ?>" >
+									<?php echo apply_filters( 'fredo_site_logo', '<span class="r">R</span><span class="e">E</span>MI<span class="title-bg"></span><span class="lastname">CORSON</span>' ); ?>
 								</a>
 							</h2>
 						</div>
