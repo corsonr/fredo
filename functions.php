@@ -9,6 +9,12 @@
  * @since 1.0
  */
 
+/**
+ * Assign the theme version to a var
+ */
+$theme         = wp_get_theme( 'fredo' );
+$fredo_version = $theme['Version'];
+
 require 'inc/customizer.php';
 
 /**
@@ -51,9 +57,11 @@ function fredo_setup() {
  */
 function fredo_scripts() {
 
+	global $fredo_version;
+
 	// Theme stylesheets.
 	wp_enqueue_style( 'fredo-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'fredo-main', get_theme_file_uri( '/assets/css/main.css' ), array(), '0.5' );
+	wp_enqueue_style( 'fredo-main', get_theme_file_uri( '/assets/css/main.css' ), array(), $fredo_version );
 
 	// Fonts.
 	$google_fonts = apply_filters(
