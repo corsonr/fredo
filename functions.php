@@ -34,6 +34,8 @@ function fredo_setup() {
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 	add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+	add_action( 'widgets_init', 'widgets_init' );
+
 	remove_filter( 'init', 'get_avatar' );
 
 	// Content specific to remicorson.com
@@ -101,6 +103,38 @@ function fredo_apply_button_class_to_last_menu_item( $item_output, $item, $depth
 		$item_output = preg_replace( '/<a.*?>(.*)<\/a>/', '<a href="' . $item->url . '" class="button button-black" target="_blank">$1</a>', $item_output );
 	}
 	return $item_output;
+}
+
+/**
+ * Register widget area.
+ *
+ * @link https://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function widgets_init() {
+
+	$sidebar_args['sidebar'] = array(
+		'name'        => __( 'Sidebar', 'fredo' ),
+		'id'          => 'sidebar-1',
+		'description' => '',
+	);
+
+	$sidebar_args = apply_filters( 'fredo_sidebar_args', $sidebar_args );
+
+	foreach ( $sidebar_args as $sidebar => $args ) {
+		$widget_tags = array(
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<span class="widget-title">',
+			'after_title'   => '</span>',
+		);
+	}
+
+	$filter_hook = sprintf( 'fredo_%s_widget_tags', $sidebar );
+
+	$widget_tags = apply_filters( $filter_hook, $widget_tags );
+	if ( is_array( $widget_tags ) ) {
+		register_sidebar( $args + $widget_tags );
+	}
 }
 
 /**
