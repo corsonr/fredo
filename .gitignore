@@ -1,5 +1,6 @@
+
 # Sass
-assets/.sass-cache/
+*.sassc
 
 # OS X metadata
 .DS_Store
