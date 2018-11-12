@@ -35,6 +35,8 @@ function fredo_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'single', 660, 420, true );
+
 	add_action( 'init', 'disable_emojis' );
 
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
@@ -93,6 +95,20 @@ function custom_excerpt_length( $length ) {
  */
 function new_excerpt_more( $more ) {
 	return apply_filters( 'fredo_excerpt_length_more', '...' );
+}
+
+/**
+ * Display post thumbnail
+ *
+ * @var $size thumbnail size. thumbnail|medium|large|full|$custom
+ * @uses has_post_thumbnail()
+ * @uses the_post_thumbnail
+ * @param string $size the post thumbnail size.
+ */
+function fredo_post_thumbnail( $size = 'full' ) {
+	if ( has_post_thumbnail() ) {
+		the_post_thumbnail( $size );
+	}
 }
 
 /**
