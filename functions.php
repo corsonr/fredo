@@ -293,7 +293,7 @@ function fredo_promote_theme_box() {
 	<div class="row theme">
 		<div class="column">
 			<span class="title"><?php esc_attr_e( 'It\'s free an open source!', 'fredo' ); ?></span>
-			<span class="description"><?php esc_attr_e( 'This theme is clean, fast and doesn\'t rely on any heavy technology. I wanted it to be simple to use, clearly readable and focusing on content. No need for useless featured images, visual effects, preloaders or any other fancy trendy stuff. Nobody cares about this anymore.', 'fredo' ); ?></span>
+			<span class="description"><?php esc_attr_e( 'This theme is clean, fast and doesn\'t rely on any heavy technology. I wanted it to be simple to use, clearly readable and focusing on content. No need for useless stuff, visual effects, preloaders or any other fancy trendy stuff. Nobody cares about this anymore.', 'fredo' ); ?></span>
 		</div>
 	</div>
 	<div class="row">
