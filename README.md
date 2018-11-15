@@ -19,3 +19,7 @@ Fredo is using sass for CSS. To add you own CSS code, you'll need to edit `/asse
 2. Type `cd` and drag n drop the `fredo` folder to the terminal window, and hit enter.
 3. Type `sass --sourcemap=none --style compressed --watch  _sass:css` and hit enter.
 4. Start modifying `_style.sass`.
+
+## Questions? Check the Wiki
+
+If you have any questions on how to use the theme, please check the [wiki](https://github.com/corsonr/fredo/wiki).
