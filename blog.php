@@ -96,7 +96,7 @@ get_header(); ?>
 
 		<?php
 		// Reset query to prevent conflicts.
-		wp_post_data();
+		wp_reset_postdata();
 	?>
 </div>
 
