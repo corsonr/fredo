@@ -59,8 +59,8 @@ get_header();
 	<div class="column">
 		<span class="title"><?php the_author(); ?></span>
 		<span class="bio"><?php echo nl2br( get_the_author_meta( 'description' ) ); ?></span>
-		<span class="social"><a class="button button-outline" href="https://twitter.com/intent/user?screen_name=remicorson" target="_blank"><?php esc_attr_e( 'Follow', 'fredo' ); ?></a><br /><?php esc_attr_e( 'Followed by ±3K people', 'fredo' ); ?></span>
-		<span class="support"><a class="button button-outline" href="<?php echo esc_url( fredo_buy_me_a_coffee_url() ); ?>" target="_blank"><?php esc_attr_e( 'Buy a coffee', 'fredo' ); ?></a><br /><?php esc_attr_e( 'Show your support', 'fredo' ); ?></span>
+		<span class="social"><a class="button button-outline" href="https://twitter.com/intent/user?screen_name=remicorson" target="_blank" rel="noopener"><?php esc_attr_e( 'Follow', 'fredo' ); ?></a><br /><?php esc_attr_e( 'Followed by ±3K people', 'fredo' ); ?></span>
+		<span class="support"><a class="button button-outline" href="<?php echo esc_url( fredo_buy_me_a_coffee_url() ); ?>" target="_blank" rel="noopener"><?php esc_attr_e( 'Buy a coffee', 'fredo' ); ?></a><br /><?php esc_attr_e( 'Show your support', 'fredo' ); ?></span>
 	</div>
 </div>
 

@@ -123,7 +123,7 @@ function fredo_post_thumbnail( $size = 'full' ) {
  */
 function fredo_apply_button_class_to_last_menu_item( $item_output, $item, $depth, $args ) {
 	if ( apply_filters( 'fredo_last_menu_item_name', 'buy-a-coffee' ) === $item->post_name ) {
-		$item_output = preg_replace( '/<a.*?>(.*)<\/a>/', '<a href="' . $item->url . '" class="button button-black" target="_blank">$1</a>', $item_output );
+		$item_output = preg_replace( '/<a.*?>(.*)<\/a>/', '<a href="' . $item->url . '" class="button button-black" target="_blank" rel="noopener">$1</a>', $item_output );
 	}
 	return $item_output;
 }
@@ -298,16 +298,16 @@ function fredo_promote_theme_box() {
 	</div>
 	<div class="row">
 		<div class="column">
-			<span><a class="button button-outline" href="https://github.com/corsonr/fredo/archive/master.zip" target="_blank"><?php esc_attr_e( 'Download', 'fredo' ); ?></a></span>
+			<span><a class="button button-outline" href="https://github.com/corsonr/fredo/archive/master.zip" target="_blank" rel="noopener"><?php esc_attr_e( 'Download', 'fredo' ); ?></a></span>
 		</div>
 		<div class="column">
-			<span><a class="button button-outline" href="https://github.com/corsonr/fredo/issues" target="_blank"><?php esc_attr_e( 'Report a bug', 'fredo' ); ?></a></span>
+			<span><a class="button button-outline" href="https://github.com/corsonr/fredo/issues" target="_blank" rel="noopener"><?php esc_attr_e( 'Report a bug', 'fredo' ); ?></a></span>
 		</div>
 		<div class="column">
-			<span><a class="button button-outline" href="https://github.com/corsonr/fredo/blob/master/CONTRIBUTING.md" target="_blank"><?php esc_attr_e( 'Contribute', 'fredo' ); ?></a></span>
+			<span><a class="button button-outline" href="https://github.com/corsonr/fredo/blob/master/CONTRIBUTING.md" target="_blank" rel="noopener"><?php esc_attr_e( 'Contribute', 'fredo' ); ?></a></span>
 		</div>
 		<div class="column">
-			<span class="support"><a class="button button-outline" href="<?php echo esc_url( fredo_buy_me_a_coffee_url() ); ?>" target="_blank"><?php esc_attr_e( 'Buy me a coffee', 'fredo' ); ?></a></span>
+			<span class="support"><a class="button button-outline" href="<?php echo esc_url( fredo_buy_me_a_coffee_url() ); ?>" target="_blank" rel="noopener"><?php esc_attr_e( 'Buy me a coffee', 'fredo' ); ?></a></span>
 		</div>
 	</div>
 	<?php
