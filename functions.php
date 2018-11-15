@@ -62,7 +62,7 @@ function fredo_scripts() {
 	global $fredo_version;
 
 	// Theme stylesheets.
-	wp_enqueue_style( 'fredo-main', get_theme_file_uri( '/assets/css/main.css' ), array(), $fredo_version );
+	wp_enqueue_style( 'fredo-main', get_theme_file_uri( '/assets/css/main.css' ), array(), $fredo_version, 'screen' );
 
 	// Fonts.
 	$google_fonts = apply_filters(
@@ -75,7 +75,7 @@ function fredo_scripts() {
 		'subset' => rawurlencode( 'latin,latin-ext' ),
 	);
 	$fonts_url    = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-	wp_enqueue_style( 'fredo-fonts', $fonts_url, array(), null );
+	wp_enqueue_style( 'fredo-fonts', $fonts_url, array(), $fredo_version, 'screen' );
 
 }
 
