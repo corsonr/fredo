@@ -23,7 +23,10 @@
 			<nav class="navigation">
 				<div class="nav_container">
 					<div class="row">
-						<div class="column column-25 logo">
+						<?php
+							$logo_column_width = apply_filters( 'fredo_nav_logo_column_width', 25 );
+						?>
+						<div class="column column-<?php echo esc_attr( $logo_column_width ); ?> logo">
 							<h2 class="title section-title">
 								<a href="<?php echo esc_url( site_url() ); ?>" >
 									<?php echo apply_filters( 'fredo_site_logo', '<span class="r">R</span><span class="e">E</span>MI<span class="title-bg"></span><span class="lastname">CORSON</span>' ); ?>
