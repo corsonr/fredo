@@ -15,7 +15,7 @@
 $theme         = wp_get_theme( 'fredo' );
 $fredo_version = $theme['Version'];
 
-require 'inc/customizer.php';
+require 'inc/class-fredo-customizer.php';
 
 /**
  * Sets actions.

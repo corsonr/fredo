@@ -5,6 +5,7 @@
  * @package WordPress
  * @subpackage Fredo
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -34,8 +35,8 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			 */
 			$wp_customize->add_section(
 				'fredo_section', array(
-					'title'			=> __( 'Fredo', 'fredo' ),
-					'priority'	=> 45,
+					'title'    => __( 'Fredo', 'fredo' ),
+					'priority' => 45,
 				)
 			);
 
@@ -44,16 +45,16 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			 */
 			$wp_customize->add_setting(
 				'fredo_tracking_code', array(
-					'default' => 'UA-XXXXXXXX-X'
+					'default' => 'UA-XXXXXXXX-X',
 				)
 			);
 			$wp_customize->add_control(
 				new WP_Customize_Control(
 					$wp_customize, 'fredo_tracking_code', array(
-						'label'                 => __( 'Tracking code', 'fredo' ),
-						'section'               => 'fredo_section',
-						'settings'              => 'fredo_tracking_code',
-						'priority'              => 30,
+						'label'    => __( 'Tracking code', 'fredo' ),
+						'section'  => 'fredo_section',
+						'settings' => 'fredo_tracking_code',
+						'priority' => 30,
 					)
 				)
 			);
