@@ -3,6 +3,12 @@ A free, open source WordPress theme, will be soon available. You can get a demo 
 
 <a align="center" href="https://github.com/corsonr/fredo/"><img width="100%" src="https://github.com/corsonr/fredo/raw/master/screenshot.png" alt="Fredo, simple & clean WordPress theme"></a>
 
+## Is Fredo performant?
+
+Well it seems so. Check the lighthouse report:
+
+<img width="100%" src="https://github.com/corsonr/fredo/raw/master/assets/fredo-measures.png" alt="Fredo, simple & clean WordPress theme">
+
 ## Why calling it "Fredo"?
 
 Well, Fred is my father's name, and trust me, that man is really incredible. Highly inspiring. He's a multi [ironman](https://www.ironman.com), a former professional football player, a known chef who who worked in the best Parisian restaurants etc... That's why I called that theme Fredo ;-)
