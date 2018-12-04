@@ -27,6 +27,7 @@ get_header(); ?>
 		$post_type      = 'post';
 		$orderby        = 'date';
 		$order          = 'DESC';
+		$paged          = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 		$query = new WP_Query(
 			array(
@@ -34,6 +35,7 @@ get_header(); ?>
 				'posts_per_page' => $posts_per_page,
 				'orderby'        => $orderby,
 				'order'          => $order,
+				'paged'          => $paged,
 			)
 		);
 
@@ -83,7 +85,6 @@ get_header(); ?>
 				array(
 					'base'     => get_pagenum_link( 1 ) . '%_%',
 					'format'   => $format,
-					'current'  => $current_page,
 					'total'    => $total,
 					'mid_size' => 4,
 					'type'     => 'list',
